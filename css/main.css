@@ -60,6 +60,7 @@ body {
    -moz-border-radius: 0.4rem;
    -ms-border-radius: 0.4rem;
    -o-border-radius: 0.4rem;
+   cursor: pointer;
 }
 
 /* nav section */
@@ -253,11 +254,11 @@ nav li a {
    margin-top: 3rem;
 }
 
-.leatest-news-section>h1 {
+.leatest-news-section > h1 {
    margin: 0 auto 3rem;
 }
 
-.leatest-news-container .news .news-img>img {
+.leatest-news-container .news .news-img > img {
    width: 100%;
    aspect-ratio: 2/1.5;
    border-radius: 0.2rem;
