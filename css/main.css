@@ -18,6 +18,11 @@ body {
    width: 100vw;
 }
 
+.title {
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+
 .section {
    width: 100%;
    max-width: 1200px;
@@ -30,6 +35,11 @@ body {
    outline: none;
    background-color: transparent;
    padding: 0;
+   border-radius: 0.4rem;
+   -webkit-border-radius: 0.4rem;
+   -moz-border-radius: 0.4rem;
+   -ms-border-radius: 0.4rem;
+   -o-border-radius: 0.4rem;
 }
 
 /* nav section */
@@ -78,11 +88,6 @@ nav ul li a:hover {
    color: white;
    font-weight: 600;
    font-size: 1rem;
-   border-radius: 0.1rem;
-   -webkit-border-radius: 0.1rem;
-   -moz-border-radius: 0.1rem;
-   -ms-border-radius: 0.1rem;
-   -o-border-radius: 0.1rem;
 }
 
 .btn-bar i {
@@ -116,7 +121,7 @@ nav li a {
    justify-content: space-between;
    gap: 1rem;
    background-color: rgba(231, 111, 81, 0.3);
-   padding-top: 2rem;
+   padding-top: 3rem;
 }
 
 
@@ -128,17 +133,13 @@ nav li a {
 }
 
 .btn-purchase {
-   padding: 0.5rem 1.2rem;
+   padding: 0.8rem 1.2rem;
    background-color: tomato;
    color: white;
    font-weight: 600;
    font-size: 1rem;
-   border-radius: 0.1rem;
-   -webkit-border-radius: 0.1rem;
-   -moz-border-radius: 0.1rem;
-   -ms-border-radius: 0.1rem;
-   -o-border-radius: 0.1rem;
    max-width: 200px;
+   font-size: 1.4rem;
 }
 
 .hero-content-right img {
@@ -167,6 +168,7 @@ nav li a {
    }
 }
 
+
 .arrow {
   display: none;
 }
@@ -181,4 +183,47 @@ nav li a {
       justify-content: center;
       align-items: center;
    }
+
+   .arrow-left {
+      padding-left: 1rem;
+   }
+
+   .arrow-right {
+      padding-right: 1rem;
+   }
 }
+
+/* main section */
+.featured-bikes-section {
+   text-align: center;
+   margin: 4rem auto 0;
+}
+
+.featured-bikes-section > p {
+   color: rgba(255, 99, 71, 0.834);
+   font-weight: 700;
+}
+
+.underline {
+   max-width: 80px;
+   height: 2.5px;
+   background-color: tomato;
+   margin: 0 auto 3rem;
+}
+
+.leatest-bikes-container {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 2.5rem;
+}
+
+.leatest-bikes-container img {
+   width: 100%;
+}
+
+@media screen and (min-width:750px) {
+   .leatest-bikes-container {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
